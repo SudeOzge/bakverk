@@ -1,0 +1,313 @@
+/* Allmänna stilar för kroppen och webbplatsens utseende */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header-stilar: bakgrund, färg, och layout */
+header {
+    background-color: rgba(42, 74, 70, 1);
+    padding: 10px 20px;
+    color: #f5f3f3;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Navigationens lista och länkar som ligger under header*/
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    position: relative;
+}
+
+/* Hover-effekt på navigationslänkar */
+nav ul li a:hover {
+    background-color: rgba(147, 193, 187, 0.3);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+/* Stilar för huvudinnehållet */
+main {
+    padding: 20px;
+}
+
+/* Centrera och storlek på bilder */
+main img {
+    display: block;
+    margin: 10px auto 0;
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Hjältedelen: bakgrundsbild, textcentrering, och padding */
+#hero {
+    background-image: url('bakverk.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 10px;
+}
+
+#hero h2 {
+    margin-top: 0;
+}
+
+/* Stil för knappen */
+.btn {
+    display: inline-block;
+    background-color: rgba(42, 74, 70, 0.8);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgba(42, 74, 70, 0.5);
+}
+
+
+/* Produktsektion: grid-layout */
+#products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Stilar för varje produktkort */
+.product {
+    background-color: rgba(42, 74, 70, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05); 
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.product h3 {
+    margin: 10px 0 5px;
+}
+
+.product p {
+    margin: 0;
+}
+
+/* Innehållsomslag och stil för textblock */
+.content-wrapper {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.content {
+    background-color: #ffffff; 
+    padding: 20px;
+    margin: 10px 0; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+.content p {
+    margin: 5px 0; 
+}
+
+/* Bildstil för olika sektioner */
+#produkter {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    height: auto;
+}
+
+#VD {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: auto;
+}
+
+#bakelse {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    height: auto;
+}
+
+/* Om oss-sektionen: bakgrund och textcentrering */
+#about-hero {
+    background-color: rgba(42, 74, 70, 0.8); 
+    color: #ffffff; 
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#about-content {
+    padding: 20px;
+}
+
+/* Kontaktinformation och formulär */
+#contact-info {
+    background-color: #ffffff; 
+    padding: 20px;
+    margin: 20px 0; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+#contact-info h2 {
+    margin-top: 0;
+}
+
+#contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 20px;
+}
+
+#contact-form h2 {
+    margin-top: 0;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin: 10px 0 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: rgba(42, 74, 70, 0.8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: rgba(42, 74, 70, 1);
+}
+
+/* Sociala medier-sektion */
+#social-media {
+    background-color: #ffffff; 
+    padding: 20px;
+    margin: 20px 0; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 20px; 
+    text-align: center; 
+}
+
+#social-media h2 {
+    margin-top: 0;
+}
+
+/* Ikoner för sociala medier */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a img {
+    width: 40px; 
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1); 
+}
+
+/* Prissektion: grid-layout */
+#prices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Stilar för prispaket */
+.price-tier {
+    background-color: rgba(42, 74, 70, 0.8); 
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.price-tier:hover {
+    transform: scale(1.05); 
+}
+
+.price-tier h2 {
+    margin: 10px 0;
+}
+
+.price-tier p {
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+/* Sidfot */
+footer {
+    background-color: rgba(42, 74, 70, 1);
+    color: #f5f3f3;
+    text-align: center;
+    padding: 20px 0;
+}
